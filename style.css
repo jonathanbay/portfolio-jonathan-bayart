@@ -328,6 +328,8 @@ footer h2 {
         display: block;
     }
     footer {
-        display: block;
+       margin-top: 600px;
+       width: 100%;
+       height: 400px;
     }
 }
