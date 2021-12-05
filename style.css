@@ -281,16 +281,6 @@ footer h2 {
     transform: scale(1.2);
 }
 
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 700px) {
     nav {
         justify-content: center;
@@ -329,6 +319,59 @@ footer h2 {
     }
     footer {
        margin-top: 600px;
+       width: 100%;
+       height: 400px;
+    }
+}
+@media screen and (max-width: 380px) {
+    nav {
+        justify-content: center;
+    }
+    nav ul {
+        display: none;
+    }
+    .intro header {
+        margin-top: 10%;
+        max-width: 100%;
+    }
+    .description {
+        display: block;
+    }
+    .imageProfil img {
+        height: 200px;
+    }
+    .description p {
+        margin-left: 15px;
+    }
+    .presentation {
+        width: 100%;
+    }
+    .presentation h2 {
+        margin: 5px auto;
+    }
+    .flexCompetences {
+        flex-flow: row wrap;
+    }
+    .infosCompetences {
+        height: 1200px;
+    }
+    .competences {
+        width: 100%;
+    }
+    .softskills {
+        width: 100%;
+    }
+    .competences h2 {
+        margin: 5px auto; 
+    }
+    .infosCompetences .detail p {
+    margin: 10px auto;
+    }
+    .projet {
+        display: block;
+    }
+    footer {
+       margin-top: 700px;
        width: 100%;
        height: 400px;
     }
