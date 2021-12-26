@@ -65,10 +65,17 @@ nav ul li:hover {
     margin: 30px;
     font-size: 2rem;
 }
-.far {
-    margin-top: 10px;
-    font-size: 35px;
+.cv {
+    margin-top: 8px;
+    padding: 10px;
+    font-size: 30px;
     color: rgb(230, 26, 26);
+    border: 2px solid rgb(230, 26, 26);
+    border-radius: 10px;
+    text-decoration: none;
+}
+.cv:hover {
+    transform: scale(1.2);
 }
 .description {
     display: flex;
