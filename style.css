@@ -2,8 +2,8 @@
 
 body {
     font-family: 'Noto Sans', sans-serif;
-    /* padding: 0;
-    margin: 0; */
+    padding: 0;
+    margin: 0;
     background: rgb(234, 246, 252);
 }
 nav {
@@ -236,6 +236,8 @@ nav ul li:hover {
 }
 .projet img {
     height: 250px;
+    width: 95%;
+    border-radius: 8px;
 }
 .porteFolio h2 {
     text-align: center;
