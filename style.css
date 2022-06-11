@@ -23,17 +23,17 @@ nav .profile {
     align-items: center;
     margin-left: 2%;
 }
-nav .profile h1 {
+nav .profile p {
     margin-left: 10px;
     font-size: 20px;
     color: white;  
 }
-nav .profile h1 .nom {
+nav .profile p .nom {
     text-transform: uppercase;
     border-bottom: 3px solid red;
 }
 nav ul {
-    margin-right: 2%;
+    /* margin-right: 2%; */
     display: flex;
     list-style-type: none;
     margin-right: 150px;
@@ -47,6 +47,7 @@ nav ul li {
 }
 nav ul  a {
     text-decoration: none;
+    color: white;
 }
 nav ul li:hover {
     border-bottom: 2px solid white;
@@ -61,7 +62,7 @@ nav ul li:hover {
     color: white;
     text-align: center;
 }
-.textAccroche p {
+.textAccroche h1 {
     margin: 30px;
     font-size: 2rem;
 }
@@ -79,30 +80,43 @@ nav ul li:hover {
 }
 .description {
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-around;
-    align-items: center;
+    /* align-items: center; */
 }
 .presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     width: 30%;
     margin: auto;
 }
 .presentation p {
     font-family: 'Noto Serif', serif;
     font-size: 20px;
+    margin: 0 15px;
 }
 .presentation h2 {
-    border-bottom: 3px solid black;
-    width: 110px;
+    /* border-bottom: 3px solid black; */
+    text-decoration: underline;
+}
+.reseau {
+    margin: 30px;
 }
 .presentation .fab {
     font-size: 40px;
     padding: 15px;
     color: rgb(19, 19, 19);
 }
-.imageProfil img {
+.imageProfil {
     height: 400px;
     margin-left: 100px;
-    /* margin-bottom: 100px; */
+}
+.imageProfil img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 .infosCompetences {
     margin: 0 auto;
@@ -119,30 +133,32 @@ nav ul li:hover {
 }
 .flexCompetences {
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
 }
-.competences p {
+.competences .langages {
     color: white;
     margin-left: 100px;
 }
 .competences {
-    width: 60%;
+    width: 600px;
 }
-.detail {
+/* .detail {
     width: 50%;
-}
+} */
 .detail p {
     color: white;
     text-align: center;
-    width: 100%;
-    margin-left: 200px;
+    margin: 30px 50px;
+    /* width: 100%; */
+    /* margin-left: 200px; */
 }
 .container {
     width: 80%;
     background-color: #ddd;
     border-radius: 10px;
-    margin-left: 50px;
+    margin: 0 auto;
 }
 .skills {
     text-align: right;
@@ -200,6 +216,11 @@ nav ul li:hover {
     color: white;
     font-size: 20px;
     margin: 10px;
+    /* padding-left: 50px; */
+    width: 250px;
+}
+.essai {
+    margin-top: 45px;
 }
 .softskills .fas {
     padding: 10px;
@@ -226,18 +247,25 @@ nav ul li:hover {
     border: none;
     margin-top: 0;
 }
-.porteFolio {
-    height: 500px;
-}
+
 .projet {
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
 }
+/* .projet h3 {
+    width: 350px;
+} */
+.mapassion, .concours-chants, .passionJoomla {
+    margin: 20px;
+    width: 450px;
+    border-radius: 10px;
+}
 .projet img {
-    height: 250px;
-    width: 95%;
-    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .porteFolio h2 {
     text-align: center;
@@ -248,11 +276,11 @@ nav ul li:hover {
 .porteFolio p {
     font-family: 'Noto Serif', serif;
     font-size: 15px;
-    margin: 30px;
+    margin: 30px 60px;
     text-align: center;
 }
 footer {
-    height: 300px;
+    /* height: 300px; */
     background: rgb(19, 19, 19);
 }
 footer h2 {
@@ -264,30 +292,78 @@ footer h2 {
 }
 .contact {
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: flex-start;
 }
 .contact p {
     margin-top: 80px;
+    margin: 80px 20px 10px;
     color: white;
     font-size: 20px;
 }
 .contact .mail {
-    width: 40%;
+    width: 300px;
 }
 .contact .mail a {
     color: #0cbfd6;
 }
-.contact .reseau {
-    width: 40%;
+.contact .reseauSociaux {
+    width: 300px;
 }
-.contact .reseau .fab {
+.contact .reseauSociaux .fab {
     font-size: 40px;
     padding: 15px;
     color: white;
 }
 .fab:hover {
     transform: scale(1.2);
+}
+
+@media screen and (max-width: 999px) {
+    .presentation {
+        width: 60%;
+    }
+    .infosCompetences {
+        height: 1100px;
+    }
+    .softskills h2 {
+        margin-top: 80px;
+    }
+    .competences h2 {
+        margin-top: 50px;
+    }
+    .competences {
+        width: 90%;
+    }
+    .imageProfil {
+        height: auto;
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width: 979px) {
+    .mapassion, .concours-chants, .passionJoomla {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 829px) {
+    .profile p{
+        text-align: center;
+        /* margin: 25px auto; */
+    }
+}
+@media screen and (max-width: 659px) {
+    .contact .mail {
+        width: 80%;
+    }
+    .contact .reseauSociaux {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 542px) {
+    .essai {
+        transform: translateX(-50px);
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -317,20 +393,7 @@ footer h2 {
     .presentation h2 {
         margin: 5px auto;
     }
-    .infosCompetences {
-        height: 700px;
-    }
-    .infosCompetences .detail p {
-        margin-left: 120px;
-    }
-    .projet {
-        display: block;
-    }
-    footer {
-       margin-top: 600px;
-       width: 100%;
-       height: 400px;
-    }
+    
 }
 @media screen and (max-width: 380px) {
     nav {
@@ -343,71 +406,5 @@ footer h2 {
         margin-top: 10%;
         max-width: 100%;
     }
-    .description {
-        display: block;
-    }
-    .imageProfil img {
-        height: 200px;
-    }
-    .description p {
-        margin-left: 15px;
-    }
-    .presentation {
-        width: 100%;
-    }
-    .presentation h2 {
-        margin: 5px auto;
-    }
-    .flexCompetences {
-        flex-flow: row wrap;
-    }
-    .infosCompetences {
-        height: 1000px;
-    }
-    .competences {
-        width: 100%;
-    }
-    .competences .trait1 {
-        margin-bottom: 20px;
-    }
-    .softskills {
-        width: 100%;
-    }
-    .competences h2 {
-        margin: 5px auto; 
-    }
-    .competences .detail {
-        width: 100%;
-        display: inline-block;
-    }
-    .competences .detail p {
-        margin: 20px auto;
-    }
-    .container {
-        margin: 10px auto;
-    }
-    .projet {
-        display: block;
-    }
-    .projet img {
-        width: 100%;
-    }
-    .contact {
-        flex-flow: column wrap;
-    }
-    .contact .mail {
-        width: 100%;
-    }
-    .contact .mail p, .reseau p {
-        margin: 20px 15px;
-    }
-    .contact .reseau {
-        width: 100%;
-    }
-
-    footer {
-       margin-top: 650px;
-       width: 100%;
-       height: 450px;
-    }
+    
 }
