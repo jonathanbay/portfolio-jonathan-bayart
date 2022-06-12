@@ -82,7 +82,6 @@ nav ul li:hover {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    /* align-items: center; */
 }
 .presentation {
     display: flex;
@@ -98,7 +97,6 @@ nav ul li:hover {
     margin: 0 15px;
 }
 .presentation h2 {
-    /* border-bottom: 3px solid black; */
     text-decoration: underline;
 }
 .reseau {
@@ -125,7 +123,6 @@ nav ul li:hover {
     width: 100%;
 }
 .competences h2 {
-    /* padding: 10px; */
     margin-bottom: 5px;
     font-size: 2rem;
     text-align: center;
@@ -144,15 +141,10 @@ nav ul li:hover {
 .competences {
     width: 600px;
 }
-/* .detail {
-    width: 50%;
-} */
 .detail p {
     color: white;
     text-align: center;
     margin: 30px 50px;
-    /* width: 100%; */
-    /* margin-left: 200px; */
 }
 .container {
     width: 80%;
@@ -254,9 +246,7 @@ nav ul li:hover {
     justify-content: space-evenly;
     align-items: center;
 }
-/* .projet h3 {
-    width: 350px;
-} */
+
 .mapassion, .concours-chants, .passionJoomla {
     margin: 20px;
     width: 450px;
@@ -294,11 +284,11 @@ footer h2 {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: center;
 }
 .contact p {
     margin-top: 80px;
-    margin: 80px 20px 10px;
+    margin: 50px 20px 30px;
     color: white;
     font-size: 20px;
 }
@@ -349,7 +339,6 @@ footer h2 {
 @media screen and (max-width: 829px) {
     .profile p{
         text-align: center;
-        /* margin: 25px auto; */
     }
 }
 @media screen and (max-width: 659px) {
